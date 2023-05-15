@@ -1,0 +1,19 @@
+def main():
+
+    dollar=input("What is the bill amount? ")
+    tippercent=input("What is the tip percentage? ")
+    print(f'The total bill amount is {convert_to_float(dollar)+convert_to_float(dollar)*convertpercent_to_float(tippercent):.2f} ')
+
+def convert_to_float(dollar):
+    
+    dollar=dollar.replace('$',"")
+    dollar=float(dollar)
+    return dollar
+
+def convertpercent_to_float(tippercent):
+    
+    tippercent=tippercent.replace('%',"")
+    tippercent=float(tippercent)/100
+    return tippercent
+
+main()
